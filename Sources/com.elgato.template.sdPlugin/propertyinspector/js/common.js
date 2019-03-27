@@ -792,14 +792,14 @@ const StreamDeck = (function () {
             };
 
             websocket.onerror = function (evt) {
-                console.warn('WEBOCKET ERROR', evt, evt.data);
+                console.warn('WEBSOCKET ERROR', evt, evt.data);
             };
 
             websocket.onclose = function (evt) {
                 // Websocket is closed
                 var reason = WEBSOCKETERROR(evt);
                 console.warn(
-                    '[STREAMDECK]***** WEBOCKET CLOSED **** reason:',
+                    '[STREAMDECK]***** WEBSOCKET CLOSED **** reason:',
                     reason
                 );
             };
